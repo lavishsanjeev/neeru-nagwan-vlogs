@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neeru Nagwan Vlogs - Discover Rural India Through My Eyes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="logo-animation">
+                <h1 class="loading-logo">Neeru Nagwan</h1>
+                <p class="loading-tagline">Vlogs</p>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-icon sun-icon">☀️</div>
+        <div class="toggle-icon moon-icon">🌙</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header glass-morphism" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h1 class="nav__title">Neeru Nagwan <span class="highlight">Vlogs</span></h1>
+            </div>
+            
+            <div class="nav__search">
+                <input type="text" placeholder="Search vlogs..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#vlogs" class="nav__link">Vlogs</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#gallery" class="nav__link">Gallery</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero__video-bg">
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1 class="hero__title typewriter" id="typewriter">Welcome to Neeru's Vlogs</h1>
+                <p class="hero__subtitle fade-in" id="subtitle">Discover Rural India Through My Eyes</p>
+            </div>
+            
+            <div class="hero__actions fade-in-up">
+                <a href="https://youtube.com/@neerunagwanvlogs" target="_blank" class="btn btn--primary btn--lg premium-btn">
+                    <span class="btn-text">Subscribe Now</span>
+                    <div class="btn-confetti"></div>
+                </a>
+                <a href="#vlogs" class="btn btn--outline btn--lg">Watch Latest Vlogs</a>
+            </div>
+            
+            <div class="social-float">
+                <a href="https://youtube.com/@neerunagwanvlogs" target="_blank" class="social-icon youtube">
+                    <span>▶️</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-stat="52000">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Subscribers</div>
+                </div>
+                <div class="stat-card" data-stat="2100000">
+                    <div class="stat-icon">👁️</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Total Views</div>
+                </div>
+                <div class="stat-card" data-stat="180">
+                    <div class="stat-icon">🎬</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat-card" data-stat="3">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Years Active</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section id="vlogs" class="featured-content">
+        <div class="container">
+            <h2 class="section__title">Featured Content</h2>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="rural">Rural Life</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card featured" data-category="adventure">
+                    <div class="video-thumbnail">
+                        <iframe 
+                            src="https://www.youtube.com/embed/rC93L513hck"
+                            title="खेत में मिला सांप।। बाल बाल बचे ।"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="play-overlay">
+                            <div class="play-btn">▶️</div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">खेत में मिला सांप।। बाल बाल बचे ।</h3>
+                        <div class="video-meta">
+                            <span class="views">125K views</span>
+                            <span class="date">Feb 12, 2022</span>
+                            <span class="duration">4:34</span>
+                        </div>
+                        <p class="video-description">A thrilling adventure where Neeru encounters a snake in the fields - a close call that showcases the unpredictable nature of rural life!</p>
+                        <div class="video-tags">
+                            <span class="tag">#neerunagwan</span>
+                            <span class="tag">#viral</span>
+                            <span class="tag">#adventure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card" data-category="rural">
+                    <div class="video-thumbnail placeholder">
+                        <div class="placeholder-content">
+                            <div class="play-btn">▶️</div>
+                            <span class="placeholder-text">Village Life Stories</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">गांव की सच्ची कहानियां</h3>
+                        <div class="video-meta">
+                            <span class="views">85K views</span>
+                            <span class="date">Mar 15, 2024</span>
+                            <span class="duration">6:12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card" data-category="culture">
+                    <div class="video-thumbnail placeholder">
+                        <div class="placeholder-content">
+                            <div class="play-btn">▶️</div>
+                            <span class="placeholder-text">Cultural Traditions</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">त्योहारों की रौनक</h3>
+                        <div class="video-meta">
+                            <span class="views">92K views</span>
+                            <span class="date">Apr 22, 2024</span>
+                            <span class="duration">8:45</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section__title">About Neeru</h2>
+                    <p class="about-description">Neeru Nagwan is a passionate content creator who brings the authentic stories of rural India to the digital world. Through his engaging vlogs, he showcases the beauty, challenges, and unique experiences of village life, connecting urban audiences with their cultural roots.</p>
+                    
+                    <div class="quote-block">
+                        <blockquote>"Every village has a story, every person has a journey. I'm here to share those untold tales."</blockquote>
+                        <cite>- Neeru Nagwan</cite>
+                    </div>
+                    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-name">Storytelling</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Video Editing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Cultural Knowledge</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="98"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <h3>Journey Timeline</h3>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-content">
+                                <h4>Started YouTube channel</h4>
+                                <p>Began the journey of sharing rural stories</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-content">
+                                <h4>First viral video - Snake encounter</h4>
+                                <p>The video that changed everything</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-content">
+                                <h4>Reached 25K subscribers</h4>
+                                <p>Growing community of rural life enthusiasts</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h4>50K+ subscriber milestone</h4>
+                                <p>Continuing to inspire and entertain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section__title">Behind the Scenes</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="behind-scenes">
+                    <div class="gallery-placeholder">
+                        <span>📸 BTS Moment 1</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-placeholder">
+                        <span>🗺️ Village Exploration</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="behind-scenes">
+                    <div class="gallery-placeholder">
+                        <span>🎬 Recording Setup</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-placeholder">
+                        <span>🌾 Rural Landscapes</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="behind-scenes">
+                    <div class="gallery-placeholder">
+                        <span>👥 With Locals</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-placeholder">
+                        <span>🏡 Traditional Homes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section__title">What Viewers Say</h2>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Neeru's videos are so authentic and entertaining! Love watching his rural adventures."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Regular Viewer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best vlogger showcasing real India. Keep up the great work!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <span>Subscriber</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"His content is both educational and fun. Learned so much about village life!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Meera Singh</h4>
+                            <span>Content Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevBtn">‹</button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next" id="nextBtn">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>Have a story to share or want to collaborate? Reach out and let's create something amazing together!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>neerunagwan@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-text">
+                                <h4>Social Media</h4>
+                                <p>@neerunagwanvlogs</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Rural India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-morphism" id="contactForm">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="name" class="form-label">Full Name</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <select id="subject" name="subject" class="form-control" required>
+                            <option value="">Select Subject</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                        <label for="subject" class="form-label">Subject</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal hidden" id="successModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-morphism">
+            <div class="success-animation">
+                <div class="success-icon">✓</div>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. Neeru will get back to you soon!</p>
+            <button class="btn btn--primary" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div class="modal hidden" id="newsletterModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-morphism">
+            <button class="modal-close" id="closeNewsletter">×</button>
+            <h3>Stay Updated!</h3>
+            <p>Subscribe to get notified about new vlogs and exclusive content.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" class="form-control" required>
+                <button type="submit" class="btn btn--primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Neeru Nagwan Vlogs</h3>
+                    <p>Sharing authentic rural stories and adventures from the heart of India</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@neerunagwanvlogs" target="_blank" class="social-link">
+                            <span>▶️</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#vlogs">Vlogs</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Content</h4>
+                        <ul>
+                            <li><a href="#vlogs">Latest Videos</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#about">Behind the Scenes</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://youtube.com/@neerunagwanvlogs" target="_blank">YouTube</a></li>
+                            <li><a href="#contact">Email</a></li>
+                            <li><a href="#" id="newsletterTrigger">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neeru Nagwan Vlogs. All rights reserved. Made with ❤️ for authentic storytelling.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
